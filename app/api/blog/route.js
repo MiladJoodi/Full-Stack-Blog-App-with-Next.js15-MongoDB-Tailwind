@@ -9,11 +9,16 @@ const LoadDB = async () => {
 
 LoadDB();
 
+
+// GET
 export async function GET(request) {
 
-    return NextResponse.json({ msg: "API Working" })
+    const blogs = await BlogModel.find({})
+
+    return NextResponse.json({blogs})
 }
 
+// POST
 export async function POST(resuest) {
 
     const formData = await resuest.formData();
