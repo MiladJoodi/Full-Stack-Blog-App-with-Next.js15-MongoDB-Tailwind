@@ -13,7 +13,7 @@ const page = () => {
         title: "",
         description: "",
         category: "Startup",
-        author: "Alex Bennett",
+        author: "Milad Joodi",
         authorImg: "/author_img.png"
     })
 
