@@ -8,7 +8,7 @@ const BlogItem = ({ title, description, category, image, id }) => {
             
             <Link href={`/blogs/${id}`}>
 
-            <Image src={image} alt="" width={400} className="border-b border-black" />
+            <Image src={image} alt="" width={400} height={200} className="border-b border-black" />
             </Link>
             <p className="ml-5 mt-5 px-1 inline-block bg-black text-white text-sm">{category}</p>
 
