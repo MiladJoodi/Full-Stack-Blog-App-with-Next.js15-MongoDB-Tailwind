@@ -312,9 +312,9 @@ const AdminDashboard = () => {
                       </div>
                       <p className="text-sm text-slate-500">
                         {new Date(sub.date).toLocaleTimeString("en-US", {
-  hour: "2-digit",
-  minute: "2-digit",
-})}
+                          hour: "2-digit",
+                          minute: "2-digit",
+                        })}
                       </p>
                     </div>
                   </div>
