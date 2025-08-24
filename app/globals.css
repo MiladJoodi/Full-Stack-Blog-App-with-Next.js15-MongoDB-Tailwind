@@ -8,3 +8,29 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
+
+.blog-content{
+    padding: 36px 0;
+}
+.blog-content b{
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.blog-content p{
+    margin-bottom: 10px;
+}
+.blog-content h1{
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 26px;
+}
+.blog-content h2{
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 22px;
+}
+.blog-content h3{
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 18px;
+}

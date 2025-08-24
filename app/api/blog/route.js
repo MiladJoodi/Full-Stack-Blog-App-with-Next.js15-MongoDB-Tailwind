@@ -1,7 +1,7 @@
 import { ConnectDB } from "@/lib/config/db"
 import { NextResponse } from "next/server"
 import { writeFile } from 'fs/promises'
-import BlogModel from "@/lib/models/Blog"
+import BlogModel from "@/lib/models/BlogModel"
 const fs = require('fs')
 
 const LoadDB = async () => {
@@ -62,7 +62,8 @@ export async function POST(resuest) {
 // Creating Api Endpoint to delete Blog
 
 export async function DELETE(request){
-    const id = await request.nextUrl.searchParams.get(id)
+    const id = await request.nextUrl.searchParams.get('id')
+    console.log(id)
     const blog = await BlogModel.findById(id);
     fs.unlink(`./public${blog.image}`, ()=>{});
     await BlogModel.findByIdAndDelete(id);

@@ -1,3 +1,5 @@
+"use client"
+
 import { assets } from "@/Assets/assets";
 import Image from "next/image";
 
@@ -17,9 +19,15 @@ const BlogTableItem = ({ authorImg, title, author, date, deleteBlog, mongoId }) 
             <td className="px-6 py-4">
                 {BlogDate.toDateString()}
             </td>
-            <td onClick={()=>deleteBlog(mongoId)} className="px-6 py-4 cursor-pointer">
-                x
-            </td>
+            <td>
+  <button 
+    onClick={() => deleteBlog(mongoId)}
+    className="cursor-pointer bg-red-500 text-white px-2 py-1 rounded"
+  >
+    x
+  </button>
+</td>
+
         </tr>
     );
 }
