@@ -251,7 +251,7 @@ const AdminDashboard = () => {
                     <div className="flex items-center gap-2">
                       <FiCalendar className="w-4 h-4 text-slate-400" />
                       <span className="text-sm font-medium text-slate-500">
-                        {new Date(blog.date).toLocaleDateString("fa-IR")}
+                        {new Date(blog.date).toLocaleDateString()}
                       </span>
                     </div>
                     <span className="px-3 py-1 bg-gradient-to-r from-blue-100 to-purple-100 text-blue-700 text-xs font-semibold rounded-full">
@@ -308,13 +308,13 @@ const AdminDashboard = () => {
                     <div className="text-right">
                       <div className="flex items-center gap-2 mb-1">
                         <FiCalendar className="w-4 h-4 text-slate-400" />
-                        <p className="font-semibold text-slate-700">{new Date(sub.date).toLocaleDateString("fa-IR")}</p>
+                        <p className="font-semibold text-slate-700">{new Date(sub.date).toLocaleDateString()}</p>
                       </div>
                       <p className="text-sm text-slate-500">
-                        {new Date(sub.date).toLocaleTimeString("fa-IR", {
-                          hour: "2-digit",
-                          minute: "2-digit",
-                        })}
+                        {new Date(sub.date).toLocaleTimeString("en-US", {
+  hour: "2-digit",
+  minute: "2-digit",
+})}
                       </p>
                     </div>
                   </div>
